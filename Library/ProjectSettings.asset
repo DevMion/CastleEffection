@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 13
-  productGUID: 42a6fc03ac2b7c847ae4846503464ce5
+  productGUID: d0916448c06a50e4eb7533b23dc216a8
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   defaultScreenOrientation: 4
@@ -12,7 +12,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: CastleEffection
+  productName: CastleEffections
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -521,14 +521,14 @@ PlayerSettings:
   apiCompatibilityLevelPerPlatform: {}
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: CastleEffection
+  metroPackageName: CastleEffections
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: CastleEffection
+  metroApplicationDescription: CastleEffections
   wsaImages: {}
   metroTileShortName: 
   metroCommandLineArgsFile: 
@@ -603,8 +603,8 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: b1ce4535-f261-44c5-81a1-216e57b52c00
-  projectName: CastleEffection (2)
+  cloudProjectId: 6a1363f7-de99-4336-aed6-fb73bd677317
+  projectName: CastleEffections
   organizationId: mion0813
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
