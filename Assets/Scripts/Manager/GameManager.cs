@@ -25,14 +25,20 @@ public class GameManager : MonoBehaviour
     // Use this for initialization
     void Start ()
     {
-		
-	}
+        InitGame();
+
+    }
 	
 	// Update is called once per frame
 	void Update ()
     {
 		
 	}
+
+    private void InitGame()
+    {
+        Debug.Log("Init Game");
+    }
 
     public void Quit()
     {

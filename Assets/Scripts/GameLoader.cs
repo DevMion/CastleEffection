@@ -14,22 +14,22 @@ public class GameLoader : MonoBehaviour
         Debug.Log("Game Load");
         if(gameManager && !GameManager.instance)
         {
-            Debug.Log("Init Game");
+            Debug.Log("new Game");
             Instantiate(gameManager);
         }
         if (soundManager && !SoundManager.instance)
         {
-            Debug.Log("Init Sound");
+            Debug.Log("new Sound");
             Instantiate(soundManager);
         }
         if (sceneChanger && !SceneChanger.instance)
         {
-            Debug.Log("Init Scene");
+            Debug.Log("new Scene");
             Instantiate(sceneChanger);
         }
         if (displayFPS && !DisplayFPS.instance)
         {
-            Debug.Log("Init FPS");
+            Debug.Log("new FPS");
             Instantiate(displayFPS);
         }
     }

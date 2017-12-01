@@ -6,18 +6,14 @@ using UnityEngine.UI;
 public class Loading : MonoBehaviour
 {
     public Slider slider = null;
-    public SceneChanger sceneChanger = null;
     public float updateTime = 0.5f;
-    public float minLoadTime = 3f;
-    private float time = 0f;
+    public float minLoadTime = 3.0f;
+    private float time = 0.0f;
 
 	// Use this for initialization
 	void Start ()
     {
-		if(sceneChanger)
-        {
-            StartCoroutine(sceneChanger.StartLoad());
-        }
+        StartCoroutine(SceneChanger.instance.StartLoad());
 	}
 	
 	// Update is called once per frame
@@ -26,11 +22,11 @@ public class Loading : MonoBehaviour
         time += Time.deltaTime;
         slider.value = time;
 
-        if(sceneChanger.IsLoad())
+        if(SceneChanger.instance.IsLoad())
         {
             if(float.Epsilon > minLoadTime - time)
             {
-                sceneChanger.SetSceneActivation();
+                SceneChanger.instance.SetSceneActivation();
             }
         }
     }
@@ -39,9 +35,9 @@ public class Loading : MonoBehaviour
     {
         while(true)
         {
-            if(sceneChanger.GetProgress() > slider.value)
+            if(SceneChanger.instance.GetProgress() > slider.value)
             {
-                slider.value = sceneChanger.GetProgress();
+                slider.value = SceneChanger.instance.GetProgress();
             }
 
             yield return new WaitForSeconds(updateTime);
