@@ -6,14 +6,29 @@ using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
-    //private bool isDone = false;
-    //private float time = 0f;
+    public static SceneChanger instance = null;
     private string loadingSceneName = "";
     private string changeSceneName = "";
     private AsyncOperation asyncOperation;
 
-	// Use this for initialization
-	void Start ()
+    private void Awake()
+    {
+        Debug.Log("Awake Scene");
+        if (!instance)
+        {
+            Debug.Log("Dont Destroy");
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else if (this != instance)
+        {
+            Debug.Log("Destroy");
+            Destroy(gameObject);
+        }
+    }
+
+    // Use this for initialization
+    void Start ()
     {
     }
 	

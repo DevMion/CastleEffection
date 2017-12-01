@@ -4,8 +4,26 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-	// Use this for initialization
-	void Start ()
+    public static GameManager instance = null;
+
+    private void Awake()
+    {
+        Debug.Log("Awake Game");
+        if (!instance)
+        {
+            Debug.Log("Dont Destroy");
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else if (this != instance)
+        {
+            Debug.Log("Destroy");
+            Destroy(gameObject);
+        }
+    }
+
+    // Use this for initialization
+    void Start ()
     {
 		
 	}
@@ -23,6 +41,8 @@ public class GameManager : MonoBehaviour
         Application.Quit();
     }
 
+    // 강제 종료시 호출됨
+    // Application.Quit()시에도 호출되는지 테스트 필요
     private void OnApplicationQuit()
     {
         // 데이터 세이브
