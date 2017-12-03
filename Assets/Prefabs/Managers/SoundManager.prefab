@@ -215,5 +215,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectSource: {fileID: 82608429894657314}
   musicSource: {fileID: 82339760473969638}
-  lowPitchRange: 0.95
-  highPitchRange: 1.05

@@ -221,10 +221,15 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\GameLoader.cs" />
     <Compile Include="Assets\Scripts\Loading.cs" />
-    <Compile Include="Assets\Scripts\Manager\DisplayFPS.cs" />
-    <Compile Include="Assets\Scripts\Manager\GameManager.cs" />
-    <Compile Include="Assets\Scripts\Manager\SceneChanger.cs" />
-    <Compile Include="Assets\Scripts\Manager\SoundManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\DisplayFPS.cs" />
+    <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Managers\SceneChanger.cs" />
+    <Compile Include="Assets\Scripts\Managers\SoundManager.cs" />
+    <Compile Include="Assets\Scripts\Scenes\GameScene.cs" />
+    <Compile Include="Assets\Scripts\Scenes\LoadingScene.cs" />
+    <Compile Include="Assets\Scripts\Scenes\Scene.cs" />
+    <Compile Include="Assets\Scripts\Scenes\TitleScene.cs" />
+    <Compile Include="Assets\Scripts\Scenes\TrainingScene.cs" />
     <Compile Include="Assets\Scripts\Test.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

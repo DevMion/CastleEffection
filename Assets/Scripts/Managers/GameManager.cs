@@ -26,7 +26,6 @@ public class GameManager : MonoBehaviour
     void Start ()
     {
         InitGame();
-
     }
 	
 	// Update is called once per frame
@@ -38,6 +37,7 @@ public class GameManager : MonoBehaviour
     private void InitGame()
     {
         Debug.Log("Init Game");
+        Debug.Log("Set Default Scene");
     }
 
     public void Quit()
